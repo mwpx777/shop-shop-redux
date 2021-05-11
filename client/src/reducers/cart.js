@@ -1,24 +1,8 @@
- const newReducer = (state, action) => {
-    switch (action.type) {
-        // if action type value is the value of 'UPDATE_PRODUCTS', return a new state object wthe an updated products array
-        case UPDATE_PRODUCTS:
-            return {
-                ...state,
-                products: [...action.products],
-            };
-        // if action type value is the value of 'UPDATE_CATEGORIES', return a new state object wthe an updated categories array
-        case UPDATE_CATEGORIES:
-            return {
-                ...state,
-                categories: [...action.categories],
-            };
+// CART
 
-        case UPDATE_CURRENT_CATEGORY:
-            return {
-                ...state,
-                currentCategory: action.currentCategory
-            };
-
+const cartReducer = (state, action) => {
+    switch(action.type){
+       
         case ADD_TO_CART:
             return {
                 ...state,
@@ -71,12 +55,9 @@
                 cartOpen: !state.cartOpen
             };
 
-
-
-        // if it's none of these actions, do not update state at all and keep it the same!
-        default:
+            default: 
             return state;
     }
 };
 
-export default newReducer;
+export default cartReducer;
