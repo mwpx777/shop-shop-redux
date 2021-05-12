@@ -8,7 +8,8 @@
     "graphql": "^15.5.0",
     "if-env": "^1.0.4",
     "react-redux": "^7.2.4",
-    "redux": "^4.1.0"
+    "redux": "^4.1.0",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "concurrently": "^6.1.0",
