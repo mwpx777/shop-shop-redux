@@ -2,7 +2,6 @@
   "name": "shop-shop-redux",
   "version": "1.0.0",
   "description": "",
- 
   "main": "server/server.js",
 
   "dependencies": {
