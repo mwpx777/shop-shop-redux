@@ -2,9 +2,9 @@
   "name": "shop-shop-redux",
   "version": "1.0.0",
   "description": "",
-  // "main": "index.js",
+ 
   "main": "server/server.js",
-  
+
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "graphql": "^15.5.0",
