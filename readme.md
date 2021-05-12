@@ -1,6 +1,6 @@
 
 
-# **Book Search Engine**   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# **Shop-Shop Redux**   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## **In this weekly challenge, we were tasked with converting an existing e-commerce application from using React state to Redux for state management. I utilized React, Redux, GraphQL, Apollo Server, MongoDB and Mongoose for creating this application.**
 
 ## **Table of Contents**
