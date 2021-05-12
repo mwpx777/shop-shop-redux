@@ -8,7 +8,7 @@ import './style.css';
 import { useLazyQuery } from '@apollo/react-hooks'
 
 // this will establish a state variable
-import { useStoreContext } from '../../utils/GlobalState';
+import { useSelector, useDispatch} from 'react-redux';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import { idbPromise } from '../../utils/helpers';
 import { QUERY_CHECKOUT } from '../../utils/queries';
@@ -20,8 +20,11 @@ const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
 
-    const [state, dispatch] = useStoreContext();
-    // console.log(state);
+    const state = useSelector((state) => {
+        return state;
+    })
+    
+    const dispatch = useDispatch();
 
     // data will contain the checkout session
     const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
